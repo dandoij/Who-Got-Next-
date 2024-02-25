@@ -8,7 +8,7 @@
         body {
             font-family: Garamond, sans-serif;
             text-align: center;
-            background-image: url(hack.jpeg);
+            background-image: url(hack.png.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed; 
@@ -92,6 +92,11 @@
             -webkit-text-stroke-color: black;
             color: white;
         }
+
+        a{
+            font-weight: bold;
+            font-family: Garamond, sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -114,7 +119,7 @@
             var output = document.getElementById('output');
             password = "johnnyappleseed";
 
-            let adminPage = "update2.html";
+            let adminPage = "adminPage.html";
 
             if (input != password){
                 output.innerHTML = "<span style='color: white; '>ACCESS DENIED</span>";
@@ -124,9 +129,12 @@
         }
 
         function clickedGuest() {
-            let memberPage = "client.html";
+            let memberPage = "clientPage.html";
             window.location.href = memberPage;
         }
     </script>
+    <div class="link"> 
+    <a  href='https://www.uc.edu/campus-life/campus-rec.html' >University of Cincinnati Recreation Center Website</a>
+    </div>
 </body>
 </html>
